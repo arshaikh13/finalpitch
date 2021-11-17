@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+}
+
+body{
+    height: 1600px;
+}
+
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color:#181818;
+    position: fixed;
+    z-index: 99;
+
+}
+
+.menuIcon{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.bar{
+    height: 6px;
+    width: 80%;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.menu{
+    position: fixed;
+    top: 60px;
+    right: -150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: black;
+    min-height: 150px;
+    transition: 0.125s;
+    z-index: 99;
+    border-start-start-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+}
+
+
+@media screen and (min-width: 600px) {
+    .menu{
+        position: fixed;
+        top: -50px;
+        right: 50px;
+        background-color:transparent;
+        flex-direction: row;
+        justify-content: space-evenly;
+        z-index: 99;
+
+    }
+
+    .bar{
+        background-color: transparent;
+    }
+
+    a{
+        text-decoration: none;
+        margin: 25px;
+        font-family: Calibri;
+    }
+}
+
+img{
+    height: 60px;
+    width: 60px;
+}
+
+
+.splash{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wallpaperaccess.com/full/2827069.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.splashtext{
+    filter: brightness(200%);
+    color: white;
+    font-size: 60px;
+    font-family: "Calibri";
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    border: solid white 6px;
+}
+
+.wrapper1{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plot{
+    background-color:teal;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: solid black 3px;
+}
+
+.plotsub{
+    font-family: Calibri;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .plot{
+        height:400px;
+        align-items: center;
+    }
+
+    body{
+        height:1700px;
+    }
+}
+
+.wrapper2{
+    background-color:white;
+    position: relative;
+    top:60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px
+}
+
+.minfo {
+    height: 250px;
+    width: 375px;
+    background-color: teal;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid black 3px;
+}
+
+.mitext{
+    color: black;
+    font-family: Calibri;
+}
+
+footer{
+    background-color: #181818;
+    height: 80px;
+    position: relative;
+    bottom: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.foottxt{
+    color: white;
+    font-family: Calibri;
+    font-size: 25px;
+    font-weight: bold;
+}
